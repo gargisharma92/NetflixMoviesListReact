@@ -1,0 +1,8 @@
+.cards {
+    padding: 20px;
+    display: inline-flex;
+}
+.card {
+    border: 10px solid black;
+    padding: 15px;
+}
