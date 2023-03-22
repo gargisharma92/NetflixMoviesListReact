@@ -1,5 +1,6 @@
 import React from "react";
-import ReactDOM from "react-dom"; // we used babel in backend and it automatically compiles and we can use modern es6 here
+import Images from "./Images";
+import Link from "./Link";
 
 /**
  * Display all the card details
@@ -11,11 +12,11 @@ function Card(props) {
     <>
     <div className="cards" >
         <div className="card" >
-            <img src={props.imgsrc} alt="Movie Image" className="card_img"></img>        
-            <div class="card-info">              
-                <h2 class="card-title">{props.name}</h2>
-    
-                <a href={props.link} target="_blank" class="btn btn-primary"><button>Watch Now</button></a>
+            <Images imgsrc={props.imgsrc} />       
+            <div className="card-info">              
+                <h2 className="card-title">{props.name}</h2>
+                <Link link={props.link} />       
+               
             </div>
         </div>
     </div> 
